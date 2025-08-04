@@ -2,9 +2,15 @@ import random
 import time
 
 def main():
-    print("🔥 ว่าไงไวรุ่น ITI 🔥")
+    print("   🔥 ว่าไงไวรุ่น ITI 🔥")
     print("=" *25)
+    
+    print("📱 พี่ชื่อ พอร์ช CS ปี3")
+    print("📲 IG: p.p_04 | GitHub: pls2s")
+    print("😴 ความสามารถพิเศษ: นอนได้ 24/7")
+    print("=" * 25 +"\n")
 
+    print("ตาน้องบ้างละ")
     name = input("ชื่ออะไรจ๊ะ : ")
     sub = input("สาขาอะไรจ๊ะ : ")
 
@@ -12,10 +18,28 @@ def main():
     for i in range(3):
         print("." , end="" ,flush=True)
         time.sleep(0.5)
-    print(" ไปกันต่ออออ\n")
+    print(" \nไปกันต่ออออ\n")
+
+    print(f"""
+╔══════════════════════╗
+  สวัสดี {name}! 👋         
+  อ่อสาขา {sub} นี่เอง      
+╚══════════════════════╝
+ """)
+    
+    hobbits()
+    power()
+    fears()
+    nickname()
+
+
+    print("\n🎊 ยินดีต้อนรับน้อง " + name +"  สู่วงการนอนน้อย! แล้วเจอกันวันที่ 16 🎊")
+
+
+
 
 def hobbits():
-    hobbys = ["คุยกับ ai ยันเช้า","F5 รัวๆ เพื่อแก้ BUG", "กรีดร้องวาลาเจอ ERROR" , "หลับ1ตื่นเพื่อเเก้ BUG"]
+    hobbys = ["คุยกับ ai ยันเช้า","F5 รัวๆ เพื่อแก้ BUG", "กรีดร้องเวลาเจอ ERROR" , "หลับ1ตื่นเพื่อเเก้ BUG"]
     hobby = random.choice(hobbys)
     print("งานอกิเรก 💼 : " + hobby)
 
@@ -23,12 +47,12 @@ def hobbits():
 def power():
     powers = ["ไม่นอนได้ 1 เดือน", "มองเห็น bug ทะลุกำแพง","control c / control v โดยการมอง ", "มองเพดานแเล้วเห็นlogic"]
     Power = random.choice(powers)
-    print("พลังวิเศษ 🧑‍💻 : " + Power)
+    print("พลังวิเศษ 🦸 : " + Power)
 
 def fears():
     Fears = ["Internet หาย", "Ai ล้ม","วัน Deploy", "มันรันได้ยังไง!!!"]
     Fear = random.choice(Fears)
-    print("พลังวิเศษ 🧑‍💻 : " + Fear)
+    print("โกโก้ กลัว 😧 : " + Fear)
 
 def nickname():
     nicknames = [
@@ -43,6 +67,8 @@ def nickname():
         "นินจาโค้ด",
         "ผู้พิทักษ์ Syntax"
     ]
-    nickname = random.choice(nicknames)
-    print("ฉายา 😎 : " + nickname)
+    Nickname = random.choice(nicknames)
+    print("ฉายา 😎 : " + Nickname)
 
+if __name__ == "__main__":
+    main()
