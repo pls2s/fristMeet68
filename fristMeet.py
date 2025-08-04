@@ -18,7 +18,7 @@ def main():
     for i in range(3):
         print("." , end="" ,flush=True)
         time.sleep(0.5)
-    print(" \nไปกันต่ออออ\n")
+    print(" \n...ไปกันต่ออออ...\n")
 
     print(f"""
 ╔══════════════════════╗
