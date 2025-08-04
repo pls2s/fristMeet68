@@ -12,8 +12,11 @@ def main():
     for i in range(3):
         print("." , end="" ,flush=True)
         time.sleep(0.5)
-    print(" มาต่อกันนนน\n")
+    print(" ไปกันต่ออออ\n")
+
+def hobbits():
+    hobbys = ["คุยกับ ai ยันเช้า","F5 รัวๆ เพื่อแก้ BUG", "กรีดร้องวาลาเจอ ERROR" , "หลับ1ตื่นเพื่อเเก้ BUG"]
+    hobby = random.choice(hobbys)
+    print("งานอกิเรก : " + hobby)
 
 
-
-main()
